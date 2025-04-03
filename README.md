@@ -29,6 +29,24 @@ A Retool custom component for converting MIDI files to ABC notation.
 |-------|------|-------------|
 | abcOutput | String | The generated ABC notation |
 
+## Installation
+
+This component has specific dependency requirements to work with Retool:
+
+```bash
+# Run the installation script with legacy peer dependencies
+./install.sh
+```
+
+Or manually:
+
+```bash
+# Clean install with legacy peer dependencies
+rm -rf node_modules
+rm -f package-lock.json
+npm install --legacy-peer-deps
+```
+
 ## Development
 
 1. Make sure you have Node.js version 20 or later installed:
@@ -107,3 +125,16 @@ To use this component in Retool:
 - **"Missing script" errors**: Make sure you're in the correct directory and have installed dependencies
 - **Component not showing in Retool**: Refresh the Retool page or check the console for errors
 - **File conversion issues**: Check browser console for detailed error messages
+
+### Dependency Conflicts
+
+If you encounter TypeScript dependency conflicts, use the `--legacy-peer-deps` flag:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+This is needed because:
+- Retool's custom component support requires TypeScript 5.x
+- Some React development tools expect TypeScript 4.x 
+- Using `--legacy-peer-deps` allows npm to ignore these conflicts

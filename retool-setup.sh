@@ -25,4 +25,3 @@ echo "2. Deploy to production: npm run build"
 echo
 echo "Don't forget to add your component from the Add Components panel in Retool."
 echo "It will be listed under your library's name."
-chmod +x retool-setup.sh

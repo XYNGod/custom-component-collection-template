@@ -7,12 +7,12 @@
   "scripts": {
     "start": "npx retool-ccl dev",
     "build": "npx retool-ccl deploy",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "test": "echo \"No tests configured\"",
     "dev": "npx retool-ccl dev",
     "deploy": "npx retool-ccl deploy",
     "verify": "echo 'Package verification successful'",
-    "init": "npx retool-ccl init"
+    "init": "npx retool-ccl init",
+    "install-deps": "npm install --legacy-peer-deps"
   },
   "keywords": [
     "midi",
@@ -40,7 +40,6 @@
     "eslint-plugin-react": "^7.34.1",
     "prettier": "^3.0.3",
     "postcss-modules": "^6.0.0",
-    "react-scripts": "^5.0.1",
     "retool-ccl": "^1.0.0",
     "typescript": "^5.3.3"
   },

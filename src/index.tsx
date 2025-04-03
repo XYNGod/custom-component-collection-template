@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import Retool from '@tryretool/custom-component-support';
 import { convertMidiToAbc } from './midiToAbcUtils';
+import './styles.css';
 
 export const MidiToAbcConverter: FC = () => {
   const [processingSteps, setProcessingSteps] = React.useState<Array<{step: string, timestamp: string}>>([]);
