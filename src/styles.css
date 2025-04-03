@@ -2,6 +2,16 @@
 
 .converter-container {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  max-width: 100%;
+  padding: 16px;
+}
+
+.debug-message {
+  background-color: #e8f4ff;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #b3e0ff;
 }
 
 .file-input {
