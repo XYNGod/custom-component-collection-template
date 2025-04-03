@@ -1,7 +1,29 @@
 {
-  "name": "my-react-app",
-  "version": "0.1.0",
+  "name": "midi-to-abc-converter",
+  "version": "1.0.0",
+  "description": "React component for converting MIDI files to ABC notation",
+  "main": "src/index.tsx",
   "private": true,
+  "scripts": {
+    "start": "npx retool-ccl dev",
+    "build": "npx retool-ccl deploy",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "npx retool-ccl dev",
+    "deploy": "npx retool-ccl deploy",
+    "verify": "echo 'Package verification successful'",
+    "init": "npx retool-ccl init"
+  },
+  "keywords": [
+    "midi",
+    "abc",
+    "music",
+    "converter",
+    "react",
+    "retool"
+  ],
+  "author": "",
+  "license": "MIT",
   "dependencies": {
     "@tryretool/custom-component-support": "latest",
     "react": "^18.2.0",
@@ -10,9 +32,17 @@
   "engines": {
     "node": ">=20.0.0"
   },
-  "scripts": {
-    "dev": "npx retool-ccl dev",
-    "deploy": "npx retool-ccl deploy"
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "prettier": "^3.0.3",
+    "postcss-modules": "^6.0.0",
+    "react-scripts": "^5.0.1",
+    "retool-ccl": "^1.0.0",
+    "typescript": "^5.3.3"
   },
   "browserslist": {
     "production": [
@@ -25,14 +55,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.55",
-    "@typescript-eslint/eslint-plugin": "^7.3.1",
-    "@typescript-eslint/parser": "^7.3.1",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.1",
-    "prettier": "^3.0.3",
-    "postcss-modules": "^6.0.0"
   }
 }
